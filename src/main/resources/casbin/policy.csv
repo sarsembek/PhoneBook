@@ -1,0 +1,10 @@
+p, admin, /contacts/phonenumber, GET
+p, admin, /contacts/phonenumber, PUT
+p, admin, /contacts/phonenumber, DELETE
+p, admin, /contacts/phonenumber, POST
+
+p, reader, /contacts/phonenumber, GET
+
+
+g, alice, admin
+g, bob, reader
