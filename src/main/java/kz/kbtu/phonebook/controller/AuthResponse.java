@@ -16,7 +16,7 @@ public class AuthResponse {
         return username;
     }
 
-    public void setEmail(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 

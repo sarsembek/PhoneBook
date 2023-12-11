@@ -9,10 +9,12 @@ public class CasbinConfig {
 
     @Bean
     public Enforcer casbinEnforcer() {
-        String modelPath = "classpath:casbin/model.conf";
-        String policyPath = "classpath:casbin/policy.csv";
+        String modelPath = "src/main/resources/casbin/model.conf";
+        String policyPath = "src/main/resources/casbin/policy.csv";
 
         Enforcer enforcer = new Enforcer(modelPath, policyPath);
+
+
         return enforcer;
     }
 }

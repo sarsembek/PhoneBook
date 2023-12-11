@@ -17,13 +17,13 @@ import kz.kbtu.phonebook.auth.JwtTokenUtil;
 
 @RestController
 
-public class AuhtController {
+public class AuthController {
 
     AuthenticationManager authManager;
     @Autowired
     JwtTokenUtil jwtUtil;
 
-    @PostMapping("/auth/login")
+    @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody @Valid AuthRequest request) {
         try {
             Authentication authentication = authManager.authenticate(
