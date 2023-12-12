@@ -16,7 +16,6 @@ import kz.kbtu.phonebook.auth.JwtTokenUtil;
 
 
 @RestController
-
 public class AuthController {
 
     AuthenticationManager authManager;

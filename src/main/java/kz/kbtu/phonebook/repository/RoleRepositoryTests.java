@@ -23,8 +23,8 @@ public class RoleRepositoryTests {
 
     @Test
     public void testCreateRoles() {
-        Role admin = new Role("ROLE_ADMIN");
-        Role reader = new Role("ROLE_READER");
+        Role admin = new Role("admin");
+        Role reader = new Role("reader");
 
         repo.saveAll(List.of(admin, reader));
 
